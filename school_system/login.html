@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Login</title>
+    <link rel="stylesheet" href="newStyle.css">
+</head>
+<body>
+
+    
+
+<div class="login-container">
+
+    <!-- Top Half -->
+    <div class="top-half">
+        <h2>KT / VSR COLLEGE</h2>
+        <img src="newschool.png" alt="School Logo">
+        <h3>Learn what is right and live in that Light</h3>
+    </div>
+
+    <!-- Bottom Half -->
+    <div class="bottom-half">
+        <div class="login-box">
+            <form method="post" action="login.php">
+                <input type="text" name="username" placeholder="Username" required>
+
+                <div class="password-container">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <span class="toggle-password" onclick="togglePassword()"></span>
+                </div>
+
+                <button  type="submit" name="login">Login</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function togglePassword() {
+    var pw = document.getElementById('password');
+    pw.type = (pw.type === 'password') ? 'text' : 'password';
+}
+</script>
+
+</body>
+</html>

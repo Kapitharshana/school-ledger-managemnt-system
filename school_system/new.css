@@ -1,0 +1,60 @@
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px; 
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px; 
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+a {
+   
+    text-decoration: none;
+    color: #007bff;
+    
+}
+
+
+
+table a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+table a[href*="edit_student.php"] {
+    background-color: #28a745; /* Green for Edit */
+}
+
+table a[href*="delete_student.php"] {
+    background-color: #dc3545; /* Red for Delete */
+}
+
+table a[href*="edit_student.php"]:hover {
+    background-color: #218838;
+}
+
+table a[href*="delete_student.php"]:hover {
+    background-color: #c82333;
+}
+/* Center action buttons in table cell */
+table td:last-child {
+    text-align: center;
+}

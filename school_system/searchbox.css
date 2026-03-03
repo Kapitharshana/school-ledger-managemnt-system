@@ -1,0 +1,52 @@
+/* ================== SEARCH FORM ================== */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;                
+    margin: 20px auto;          
+    width: 500px;               
+    justify-content: center;    
+}
+
+.search-box input {
+    flex: none;               
+    width: 300px;              
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-box button,
+.search-box a {
+    padding: 8px 12px;         
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Blue Search button */
+.search-box button.btn-blue {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+/* Gray Reset button */
+.search-box a.btn-gray {
+    background-color: #6c757d;
+    color: #fff;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.search-box a.btn-gray:hover {
+    background-color: #5a6268;
+}

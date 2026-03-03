@@ -1,0 +1,121 @@
+/* Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background:radial-gradient(circle at top, #aed1e8 0, #f7f9fd 35%, #eef0f9 100%);
+}
+
+/* Main login box */
+.login-container {
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.066);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* Top half */
+.top-half {
+    background-color: #0f172a;
+   /* background-color: #dcdcdc;*/
+    padding: 30px 20px;   /* Fix border touching issue */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-half h2,
+.top-half h3 {
+    color: #e5e7eb;                 /* light gray text to match header */
+}
+
+.top-half img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: contain;   /* FIX image alignment */
+    padding: 15px;         /* Makes image centered nicely */
+    margin-bottom: 15px;
+}
+
+.top-half h3 {
+    font-weight: normal;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Bottom half */
+.bottom-half {
+    padding: 30px;     /* FIX input touching edge */
+}
+
+/* Login form */
+.login-box {
+    width: 100%;
+}
+
+/* Inputs */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;  
+    
+}
+
+/* Password toggle */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Login button */
+.login-box button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #0d6efd, #1d4ed8); /* same blue family as app */
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.login-box button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 15px rgba(15, 23, 42, 0.35);
+}
+    
+
+/* Error messages */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
