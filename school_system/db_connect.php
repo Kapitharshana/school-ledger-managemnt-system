@@ -5,7 +5,7 @@
 $host = "localhost";       
 $dbname = "school_db";     
 $user = "root";            
-$pass = "kapi_1997";                
+$pass = "******8";                
 
 // Create connection
 $conn = new mysqli($host, $user, $pass, $dbname);
@@ -18,3 +18,4 @@ if ($conn->connect_error) {
 
 
 ?>
+
